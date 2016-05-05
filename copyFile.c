@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/* must pipe input and output via terminal */
+/* must pipe input and output via terminal, otherwise user can input in terminal */
 
 int main() {
   int c;
@@ -9,5 +9,4 @@ int main() {
   while((c = getchar()) != EOF) {
     putchar(c);
   }
-
 }
