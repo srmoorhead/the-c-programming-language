@@ -17,10 +17,12 @@ int main()
 
   max = 0;
   while ((len = getOneLine(line, MAXLEN)) > 0) {
+    /* addition for exercise 1-16 */
     if (line[len - 1] != '\n') {
       while((c = getchar()) != '\n' && (c != EOF))
 	++len;
     }
+    /* end addition */
     if (len > max) {
       max = len;
       copy(longest, line);
