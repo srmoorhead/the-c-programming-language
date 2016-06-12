@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+/* Exercise 1-16:  Revise the main routine of the longest-line program so it will correctly print the length of arbitrarily long input lines, and as much as possible of the text. */
+
 #define MAXLEN 1000 /* maximum input line size */
 
 int getOneLine(char line[], int maxline);  // getline is a protected function name
@@ -11,16 +13,21 @@ int main()
   int max;  /* maximum length seen so far */
   char line[MAXLEN];  /* current input line */
   char longest[MAXLEN];  /* longest line saved here */
+  int c;
 
   max = 0;
   while ((len = getOneLine(line, MAXLEN)) > 0) {
+    if (line[len - 1] != '\n') {
+      while((c = getchar()) != '\n' && (c != EOF))
+	++len;
+    }
     if (len > max) {
       max = len;
       copy(longest, line);
     }
   }
   if (max > 0) /* there was a line */
-    printf("%s", longest);
+    printf("%s\n%d chars\n", longest, max);
   return 0;
 }
 
