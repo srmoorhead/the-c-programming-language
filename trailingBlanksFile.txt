@@ -1,0 +1,15 @@
+This file has a lot of trailing blanks.				
+
+And empty lines.    
+
+
+
+
+Testing it all.			
+Testing again.				.
+Testing										
+
+
+End
+
+Now is the end.
