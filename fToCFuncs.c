@@ -13,7 +13,7 @@ int main() {
   int cels, fahr;
 
   // print header
-  printf("Celsius\tFahrenheit\n");
+  printf("Fahrenheit\tCelsius\n");
 
   for(cels = LOWER; cels <= UPPER; cels += STEP) {
     fahr = fahrToC(cels);

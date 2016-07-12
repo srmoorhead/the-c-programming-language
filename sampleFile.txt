@@ -1,7 +1,4 @@
-This is a test file.  It can be used for testing things.
-Things like C programs.
-
-Lets                    talk about spaces.
-LOTS     OF     SPACES     	 .
-
-        spaaaaaace
+minecraft is awesome
+Mason is also awesome.
+Sean is older than Christopher.
+Emma is standing between Sean and Mason.
